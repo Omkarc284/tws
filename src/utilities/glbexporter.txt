@@ -1,0 +1,23 @@
+// setTimeout(function() {
+    //   const exp = new GLTFExporter()
+    //   exp.parse(
+    //     scene,
+    //     function(result){
+    //       saveArrayBuffer(result, 'Planet.glb')
+    //     },
+    //     {
+    //       binary: true
+    //     }
+    //   )
+
+    //   function saveArrayBuffer(buffer, filename) {
+    //     save(new Blob([buffer], {type: 'application/octet-stream'}), filename)
+    //   }
+    //   const link = document.createElement('a');
+    //   document.body.appendChild(link)
+    //   function save(blob, filename){
+    //     link.href = URL.createObjectURL(blob)
+    //     link.download = filename
+    //     link.click();
+    //   }
+    // }, 8000);

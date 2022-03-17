@@ -1,0 +1,218 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+Canvas {
+  z-index: -10; 
+  align-self: center;
+}
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+section {
+  background: black;
+  scroll-snap-align: end;
+  scroll-behavior: smooth;
+} 
+nav {
+  z-index: 30;
+  font-family: "Oswald", sans-serif;
+  font-style: italic;
+  display:flex;
+  justify-content: space-around;
+  min-height: 10vh;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+}
+.social {
+  display:flex;
+  list-style: none;
+  justify-content:space-between;
+}
+.social img {
+  width: 1.6666666666666667vw;
+  height: 3.4151547491995733vhvh
+}
+.social-ul {
+  width:10vw;
+}
+.social-div {
+  justify-items:center;
+  z-index: 30;
+  font-family: "Oswald", sans-serif;
+  font-style: italic;
+  display:flex;
+  justify-content:center;
+  position:fixed;
+  top: 91vh;
+  left: 80vw;
+  width: 20%;
+  height: 10vh;
+  align-items:center;
+}
+.navlinks {
+  display: flex;
+  list-style: none;
+  justify-content:space-around;
+  width: 50%;
+  font-size: 1.2vw;
+}
+.link{
+  font-weight: bold;
+}
+.nav-link {
+  cursor: pointer;
+  color: rgba(255,255,255, 0.65);
+  text-decoration: none;
+}
+.nav-link:hover{
+  color:rgba(255,255,255, 1)
+}
+.navbar-brand{
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  color: rgba(255,255,255, 0.85);
+  font-size: 2.4vmax;
+  letter-spacing: 1px;
+  align-items: center;
+}
+.navbar-brand:hover{
+  color:rgba(255,255,255, 1);
+}
+.navbar-brand img {
+  width: 2.4vw;
+  height: 4.9178228388473855vh;
+}
+.navbar-brand h4 {
+  margin-left: 7px;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+.active-route {
+  color:magenta;
+}
+.hamburger-toggle {
+  cursor:pointer;
+  font-size: 1.25vw;
+  display:none;
+  color: rgba(255,255,255, 0.65)
+}
+.hamburger-toggle:hover {
+  font-size: 1.25vw;
+  color: rgba(255,255,255, 1)
+}
+.App {
+  
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.rotate {
+  align-content: center;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 100vh;
+}
+.home-info {
+  /* position: relative; */
+  z-index: 20;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  
+}
+
+.about-info{
+  color:white;
+  z-index: 30;
+  height: 100vh;
+  width: 100vw;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  text-align: right;
+  justify-content: center;
+  margin: 0 auto;
+}
+.ION-info{
+  color:white;
+  z-index: 30;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+}
+.OGs-info{
+  color:white;
+  z-index: 30;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+}
+.Dest-info{
+  color:white;
+  z-index: 30;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+  align-items:flex-end;
+  justify-content:center;
+  margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+  body{
+    z-index: 30;
+    overflow-x: hidden;
+    
+  }
+  .hamburger-toggle {
+    z-index: 30;
+    display:block;
+    
+  }
+  .navlinks {
+    z-index: 30;
+    position:absolute;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    height:92vh;
+    align-items: center;
+    width:100%;
+    top: 8vh;
+    background-color: rgb(54, 50, 50);
+    font-size: 32px;
+    transform: translate(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .active {
+    transform: translate(0%)
+  }
+}
+
