@@ -4,5 +4,8 @@ import vitePluginString from 'vite-plugin-string'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), vitePluginString()]
+  plugins: [react(), vitePluginString()],
+  build: {
+    chunkSizeWarningLimit: 1600,
+  },
 })
