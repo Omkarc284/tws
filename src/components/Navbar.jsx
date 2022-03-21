@@ -17,7 +17,7 @@ const Navbar = (props) => {
     return (
         <nav>
             <div className="logo">
-                <Link className="navbar-brand" to="0" onClick={() => props.setState(0)} spy={true} smooth={true} duration={1000}><img src="./src/joint.png"/><h4>TWS</h4></Link>
+                <Link className="navbar-brand" to="0" onClick={() => props.setState(0)} spy={true} smooth={true} duration={1000}><img src="joint.png"/><h4>TWS</h4></Link>
             </div>
             <ul className="navlinks">
                 <li className="link"><Link className="nav-link" activeClass="active-route" onSetActive={()=> {props.setState(0)}} to="0" spy={true} smooth={true} duration={1000}>Wasted Stamps</Link></li>

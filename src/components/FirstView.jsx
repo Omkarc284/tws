@@ -4,7 +4,7 @@ const FirstPage = () => {
     return (
         <div className="container">
             <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
-            <link rel="stylesheet" href="./src/Home.scss" />
+            <link href='Home.css' rel='stylesheet' type='text/css' />
             <div className="container">
                 <div className="glitch" data-text="WASTED STAMPS">WASTED STAMPS</div>
                 <div className="glow">WASTED STAMPS</div>

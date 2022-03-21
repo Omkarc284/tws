@@ -18,7 +18,7 @@ import useWindowDimensions from './components/WindowSize';
 var loaded = false
 var zone;
 function Stamp () {
-  const scene = useGLTF("./src/models/Stamp_1.glb");
+  const scene = useGLTF("/models/Stamp_1.glb");
   return (
     <mesh>
       <primitive object={scene.scene} dispose ={null} />
@@ -27,7 +27,7 @@ function Stamp () {
   )
 }
 function Stamp1 () {
-  const scene = useGLTF("./src/Stamp_1.glb");
+  const scene = useGLTF("Stamp_1.glb");
   return (
     <mesh>
       <primitive object={scene.scene} dispose ={null} />
@@ -36,7 +36,7 @@ function Stamp1 () {
   )
 }
 function Gun () {
-  const scene = useGLTF("./src/models/Gun.glb");
+  const scene = useGLTF("/models/Gun.glb");
   return (
     <mesh>
       <primitive object={scene.scene} dispose ={null} />
@@ -45,7 +45,7 @@ function Gun () {
   )
 }
 function Chainsaw () {
-  const scene = useGLTF("./src/models/chainsaw.glb");
+  const scene = useGLTF("/models/chainsaw.glb");
   return (
     <mesh>
       <primitive object={scene.scene} dispose ={null} />
@@ -54,7 +54,7 @@ function Chainsaw () {
   )
 }
 function Knife () {
-  const scene = useGLTF("./src/models/knife.glb");
+  const scene = useGLTF("/models/knife.glb");
   return (
     <mesh>
       <primitive object={scene.scene} dispose ={null} />
@@ -63,7 +63,7 @@ function Knife () {
   )
 }
 function Uzi () {
-  const scene = useGLTF("./src/models/uzi.glb");
+  const scene = useGLTF("/models/uzi.glb");
   return (
     <mesh>
       <primitive object={scene.scene} dispose ={null} />
@@ -72,7 +72,7 @@ function Uzi () {
   )
 }
 function CashBundle () {
-  const scene = useGLTF("./src/models/cash_bundle.glb");
+  const scene = useGLTF("/models/cash_bundle.glb");
   return (
     <mesh>
       <primitive object={scene.scene} dispose ={null} />
@@ -80,7 +80,7 @@ function CashBundle () {
   )
 }
 function CashBundle1 () {
-  const scene = useGLTF("./src/models/cash_bundle1.glb");
+  const scene = useGLTF("/models/cash_bundle1.glb");
   return (
     <mesh>
       <primitive object={scene.scene} dispose ={null} />
@@ -88,7 +88,7 @@ function CashBundle1 () {
   )
 }
 function CashBundle2 () {
-  const scene = useGLTF("./src/models/cash_bundle2.glb");
+  const scene = useGLTF("/models/cash_bundle2.glb");
   return (
     <mesh>
       <primitive object={scene.scene} dispose ={null} />
@@ -96,7 +96,7 @@ function CashBundle2 () {
   )
 }
 function CashBundle3 () {
-  const scene = useGLTF("./src/models/cash_bundle3.glb");
+  const scene = useGLTF("/models/cash_bundle3.glb");
   return (
     <mesh>
       <primitive object={scene.scene} dispose ={null} />
@@ -104,7 +104,7 @@ function CashBundle3 () {
   )
 }
 function Dollar () {
-  const scene = useGLTF("./src/models/dollar_bill.glb");
+  const scene = useGLTF("/models/dollar_bill.glb");
   return (
     <mesh>
       <primitive object={scene.scene} dispose ={null} />
@@ -112,7 +112,7 @@ function Dollar () {
   )
 }
 function Beer () {
-  const scene = useGLTF("./src/models/beer.glb");
+  const scene = useGLTF("/models/beer.glb");
   return (
     <mesh>
       <primitive object={scene.scene} dispose ={null} />
@@ -122,7 +122,7 @@ function Beer () {
 function Planet() {
   const pref = useRef();
   useFrame(()=> (pref.current.rotation.y += 0.0002))
-  const planet = useGLTF("./src/models/Planet.glb");
+  const planet = useGLTF("/models/Planet.glb");
   return (
     <mesh ref={pref} position={[-100,-120,100]} scale={[0.7,0.7,.7]}>
       <primitive object={planet.scene} dispose={null}/>
@@ -154,7 +154,7 @@ function Atmosphere () {
   )
 }
 const Ion = () => {
-  const scene = useGLTF("./src/models/Spaceship.glb");
+  const scene = useGLTF("/models/Spaceship.glb");
   const iref = useRef();
   useFrame(()=> (iref.current.rotation.x += 0.0002))
   return (
@@ -165,7 +165,7 @@ const Ion = () => {
   )
 }
 const Spaceman = () => {
-  const scene = useGLTF("./src/models/astro.glb");
+  const scene = useGLTF("/models/astro.glb");
   return (
     <mesh scale={[0.007,0.007,0.007]}>
       <primitive object={scene.scene} dispose ={null} />
@@ -262,9 +262,9 @@ const Socials = () =>{
       <ul className='social-ul'>
         <div style={{color: 'white', textAlign:'left', fontSize: '1vw'}}>Follow us:</div>
         <div className="social">
-          <li><a href="https://instagram.com"><img src="./src/instagram.png"/></a></li>
-          <li><a href="https://twitter.com"><img src="./src/twitter.png"/></a></li>
-          <li><a href="https://discord.com"><img src="./src/discord.png"/></a></li>
+          <li><a href="https://instagram.com"><img src="instagram.png"/></a></li>
+          <li><a href="https://twitter.com"><img src="twitter.png"/></a></li>
+          <li><a href="https://discord.com"><img src="discord.png"/></a></li>
         </div>
         
       </ul>
@@ -293,7 +293,7 @@ function App() {
         <>
           <span style={{color: 'rgba(255,255,255, 1)', alignContent: 'center'}}>Rotate to Landscape.</span>
           <div className='rotate'>
-          <img src="./src/rotate_med.gif"/>
+          <img src="rotate_med.gif"/>
           </div>
           
         </>
@@ -395,12 +395,6 @@ function App() {
           
         </>
         ) }
-      
-        {/* <Routes>
-          <Route exact path='/' element= {<App/>}>
-            <Route exact path='mint' element= {<Mint/>} />
-          </Route>
-        </Routes> */}
       
        
         
