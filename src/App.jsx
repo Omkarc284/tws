@@ -27,7 +27,7 @@ function Stamp () {
   )
 }
 function Stamp1 () {
-  const scene = useGLTF("Stamp_1.glb");
+  const scene = useGLTF("/models/Stamp_2.glb");
   return (
     <mesh>
       <primitive object={scene.scene} dispose ={null} />
@@ -277,6 +277,7 @@ function App() {
     ReactGa.initialize('G-S71Y79P0XF');
     ReactGa.pageview('/');
   },[])
+  useGLTF.preload(['/models/Stamp_1.glb', '/models/Stamp_2.glb','/models/Gun.glb', '/models/ion.glb', '/models/cash_bundle.glb', '/models/cash_bundle1.glb', '/models/cash_bundle2.glb', '/models/cash_bundle3.glb', '/models/chainsaw.glb', '/models/dollar_bill.glb', '/models/knife.glb', '/models/astro.glb', '/models/beer.glb', '/models/Planet.glb', '/models/Spaceship.glb', '/models/uzi.glb'])
   const { height, width } = useWindowDimensions();
   var [id, setid] = useState(0)
   const setState = (num) => {
